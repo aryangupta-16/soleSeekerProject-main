@@ -1,0 +1,37 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.nav2, .nav1, .nav3, .nav4{
+  background-color: rgb(81, 78, 78) !important;
+}
+
+.linksReactNavbar{
+  font-family: 'BioRhyme' !important;
+  font-style: italic !important;
+  color: rgb(249, 113, 113) !important; 
+  text-shadow: 1px 1px 1px rgb(240 178 178) !important;
+}
+
+.linksReactNavbar:hover{
+  font-family: 'BioRhyme' !important;
+  font-style: italic !important;
+  color: rgb(245, 217, 217) !important; 
+  text-shadow: 1px 1px 1px rgb(131, 129, 129) !important;
+}
+
+svg{
+  color: rgb(249, 113, 113)  !important;
+}
+
+svg:hover{
+  color: rgb(245, 217, 217)  !important;
+}

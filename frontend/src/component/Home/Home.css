@@ -1,0 +1,174 @@
+
+
+.banner {
+  background-image: url("../../images/wallcover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner > h1 {
+  margin: 5vmax;
+  padding: 100;
+
+  font: 600 2.5vmax "BioRhyme";
+  color: blanchedalmond;
+  background-color: rgb(70, 47, 47);
+}
+
+.banner > p {
+  font: 600 "Monospace";
+  font-size: 200%;
+  font-family: "BioRhyme";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background-color: rgb(70, 47, 47);
+  overflow: hidden; /* Hide overflow characters */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typing 1.5s steps(15), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with 0 width */
+  }
+  to {
+    width: 25%; /* Gradually increase width to show all characters */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-right-color: transparent; /* Hide caret */
+  }
+  50% {
+    border-right-color: black; /* Show caret */
+  }
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font-family: 'Anton';
+}
+
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: 'Anton';
+  font-size: 200%;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  border: 2px solid rgba(0, 0, 0, 0.692);
+  box-shadow: 0 0 2px rgba(93, 18, 18, 0.575);
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Anton";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: rgb(87, 20, 8);
+  font-family: "Anton";
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 8px rgba(93, 18, 18, 0.575);
+  border: 2px solid rgba(93, 18, 18, 0.575);
+  transform: scale(1.15);
+  font-weight: bold;
+  background-color: rgba(211, 207, 205, 0.377);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax; 
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "BioRhyme";
+  }
+}
